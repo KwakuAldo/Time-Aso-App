@@ -39,9 +39,14 @@
                         <a class="txt-sm border-b border-gray-300 ml-1" href="#">Forgot password?</a>
                     </div>
                     <div class="input-001-continer relative w-full" data-validate="Password is required">
-                        <input class="input-001 block w-full h-16 px-55 text-lg" type="password" aria-label="password">
+                        <input class="input-001 block w-full h-16 px-55 text-lg" id="password" type="password" aria-label="password">
                         <span class="input-001-focus absolute block border"></span>
                     </div>
+                    <div>
+                        <input type="checkbox" id="showPassword" />
+                        <label class="txt-sm" for="showPassword">Show Password</label>
+                    </div>
+                    
 
                     <!--Sign In Button-->
                     <div class="flex flex-wrap w-full mt-4">
@@ -57,5 +62,7 @@
             </div>
         </div>
     </main>
+
+<script src="index.js"></script>
 </body>
 </html>

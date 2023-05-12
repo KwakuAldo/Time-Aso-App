@@ -75,7 +75,7 @@ input {
 
 .form-txt {
 	font-family: Montserrat-SemiBold;
-	font-size: 16px;
+	font-size: 1.125rem;
 	color: #555;
 	line-height: 1.5;
 }
@@ -112,4 +112,9 @@ input {
 .login-btn {
     background-color: #333;
     color: #fff;
+}
+
+button,
+input {
+	overflow: visible;
 }
