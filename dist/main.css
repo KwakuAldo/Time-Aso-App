@@ -723,6 +723,12 @@ body {
   font-weight: 400;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #fc00ff;
+  border-color: #fc00ff;
+}
+
 .btn-facebook {
   color: #fff;
   background-color: #3b5998;

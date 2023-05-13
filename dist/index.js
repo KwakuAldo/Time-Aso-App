@@ -7,5 +7,4 @@ showPasswordCheckbox.addEventListener('change', function () {
     } else {
         passwordInput.type = 'password';
     }
-    console.log("CheckBox")
 });
