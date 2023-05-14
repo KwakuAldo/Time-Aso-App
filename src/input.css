@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
     font-weight: 400;
 }
 
@@ -74,6 +75,12 @@ a:hover {
 	line-height: 1.5;
 }
 
+.txt-sm-02 {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
 input {
 	outline: none;
 	border: none;
@@ -83,6 +90,12 @@ input {
 	font-family: Montserrat-SemiBold;
 	font-size: 1.125rem;
 	color: #555;
+	line-height: 1.5;
+}
+
+.form-txt-02 {
+	font-family: Montserrat-SemiBold;
+	font-size: 1.125rem;
 	line-height: 1.5;
 }
 
