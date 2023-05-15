@@ -3,6 +3,7 @@ const passwordError = document.getElementById('passwordError');
 const showPasswordCheckbox = document.getElementById('showPassword');
 const phoneInput = document.getElementById('telephone');
 
+// Prompt user to enter valid email address
 function validateEmail() {
     const emailInput = document.getElementById('email-input');
     const emailError = document.getElementById('email-error');
