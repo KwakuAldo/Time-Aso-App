@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <title>SIGN UP</title>
 </head>
-<body>
+<body class="h-full">
     <main class="flex justify-center items-center bg-[url('../images/bg-01.jpg')] bg-center bg-cover bg-no-repeat w-full min-h-screen">
         <section class="form relative bg-white w-[69rem] my-24">
             <form class="form-input flex relative w-full" action="#" method="post">
@@ -37,11 +37,17 @@
                         </div>
                     </div>
                     <div class="form-row relative mb-6 pl-16 pr-12">
-                        <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" type="text" placeholder="Your Email" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" required="" aria-label="your email">
+                        <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" id="email-input" type="email" placeholder="Your Email" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" title="Enter valid email" required aria-label="your email" onblur="validateEmail()">
+                        <span class="text-red-500 hidden" id="email-error">Please enter a valid email address</span>
                     </div>
                     
                     <div class="form-row relative mb-6 pl-16 pr-12">
-                        <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" type="password" placeholder="Password" required="" aria-label="password">
+                        <input class="password-input input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" id="pwdInput" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}" placeholder="Password" required title="Password must be at least four(4) characters long, must contain one(1) capital letter and symbol." aria-label="password">
+                    </div>
+                    <p class="hidden rounded-lg" id="passwordError"></p>
+                    <div class="form-row relative mb-6 pl-16 pr-12">
+                        <input class="showPassword" id="showPwd" type="checkbox" aria-label="password-checkbox"/>
+                        <label class="txt-sm" for="showPwd">Show Password</label>
                     </div>
                 </div>
 
@@ -81,12 +87,12 @@
 
                     <div class="relative w-auto mb-6 pl-16 pr-12">
                         <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]"
-                            id="telephone" type="text" pattern="[0-9()+-]+" placeholder="Phone Number" title="Please enter a valid phone number." required="" aria-label="telephone number">
+                            id="telephone" type="text" pattern="[0-9()+-]+" maxlength="10" placeholder="Phone Number" title="Please enter a valid phone number." required="" aria-label="telephone number">
                     </div>
 
                     <div class="relative mt-9 pl-16 pr-12">
-                        <input type="checkbox" id="showPassword" />
-                        <label class="txt-sm" for="showPassword">I accept the 
+                        <input type="checkbox" id="T&Cs" aria-label="T&Cs Checkbox"/>
+                        <label class="txt-sm" for="T&Cs">I accept the 
                             <a class="txt-sm-02 text-white border-b border-gray-300 ml-1" href="#">Terms and Conditions</a>
                         </label>
                     </div>

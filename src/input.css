@@ -184,3 +184,12 @@ select,
 	color: #333;
 	-webkit-box-shadow: 0 6px 17px 0 rgba(0,0,0,.15);
 }
+
+#passwordError {
+	width: 18.75rem;
+	height: auto;
+	color: #fff;
+	background: #4835d4;
+	margin-left: 3.75rem;
+	padding: 1.25rem;
+}
