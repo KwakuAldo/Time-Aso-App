@@ -197,3 +197,8 @@ select,
 	margin-left: 3.75rem;
 	padding: 1.25rem;
 }
+
+#region-select {
+	background-color: black;
+	color: white;
+}
