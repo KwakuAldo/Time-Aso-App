@@ -89,8 +89,8 @@ phoneInput.addEventListener('input', function (event) {
     this.value = this.value.replace(/[^0-9()+-]/g, '');
 });
 
-
-const options = document.getElementsByClassName('accessibility')
+// Dropdown menu background color
+const options = document.getElementsByClassName('region_select')
 for (i = 0; i < options.length; i++) {
     options[i].style.backgroundColor = "black";
     options[i].style.color = "white";

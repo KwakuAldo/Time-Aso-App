@@ -1060,7 +1060,7 @@ select,
   padding: 1.25rem;
 }
 
-#region-select .accessibility {
-  background-color: red;
+#region-select .region_select {
+  background-color: black;
   color: white;
 }
