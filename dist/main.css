@@ -702,10 +702,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/images\/bg-01\.jpg\'\)\] {
-  background-image: url('../images/bg-01.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -1062,4 +1058,9 @@ select,
   background: #4835d4;
   margin-left: 3.75rem;
   padding: 1.25rem;
+}
+
+#region-select .accessibility {
+  background-color: red;
+  color: white;
 }

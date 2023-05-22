@@ -198,7 +198,7 @@ select,
 	padding: 1.25rem;
 }
 
-.accessibility {
-	background-color: black;
+#region-select .accessibility {
+	background-color: red;
 	color: white;
 }

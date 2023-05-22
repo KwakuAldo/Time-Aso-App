@@ -88,3 +88,10 @@ document.addEventListener('DOMContentLoaded', function () {
 phoneInput.addEventListener('input', function (event) {
     this.value = this.value.replace(/[^0-9()+-]/g, '');
 });
+
+
+const options = document.getElementsByClassName('accessibility')
+for (i = 0; i < options.length; i++) {
+    options[i].style.backgroundColor = "black";
+    options[i].style.color = "white";
+}
