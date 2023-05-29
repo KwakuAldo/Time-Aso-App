@@ -4,6 +4,9 @@ module.exports = {
     "./dist/**/*.{html,js}"
   ],
   theme: {
+    screens: {
+      'md': '577px'
+    },
     extend: {},
   },
   plugins: [],

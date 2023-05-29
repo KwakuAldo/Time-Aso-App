@@ -771,10 +771,6 @@ video {
   padding-left: 4rem;
 }
 
-.pl-28 {
-  padding-left: 7rem;
-}
-
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -785,10 +781,6 @@ video {
 
 .pr-12 {
   padding-right: 3rem;
-}
-
-.pr-28 {
-  padding-right: 7rem;
 }
 
 .pr-3 {
@@ -813,6 +805,22 @@ video {
 
 .pt-\[0\.718rem\] {
   padding-top: 0.718rem;
+}
+
+.pl-28 {
+  padding-left: 7rem;
+}
+
+.pr-28 {
+  padding-right: 7rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {
@@ -873,11 +881,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .my-bg {
   background-image: url(../dist/images/bg-01.jpg);
 }
@@ -913,7 +916,6 @@ a:hover {
   font-family: Montserrat-SemiBold;
   font-size: 18px;
   line-height: 1.2;
-  width: calc((100% - 1.25rem)/2);
   transition: all .4s;
   position: relative;
   z-index: 1;
@@ -1063,4 +1065,27 @@ select,
 #region-select .region_select {
   background-color: black;
   color: white;
+}
+
+@media (min-width: 577px) {
+  .btn-google,
+	.btn-facebook {
+    width: calc((100% - 1.25rem)/2);
+  }
+
+  .md\:pl-28 {
+    padding-left: 7rem;
+  }
+
+  .md\:pr-28 {
+    padding-right: 7rem;
+  }
+
+  .md\:pl-\[3\.75rem\] {
+    padding-left: 3.75rem;
+  }
+
+  .md\:pr-\[3\.75rem\] {
+    padding-right: 3.75rem;
+  }
 }

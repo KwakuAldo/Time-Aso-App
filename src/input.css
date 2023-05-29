@@ -37,7 +37,6 @@ a:hover {
     font-family: Montserrat-SemiBold;
     font-size: 18px;
     line-height: 1.2;
-    width: calc((100% - 1.25rem)/2);
     transition: all .4s;
     position: relative;
     z-index: 1;
@@ -201,4 +200,11 @@ select,
 #region-select .region_select {
 	background-color: black;
 	color: white;
+}
+
+@media (min-width: 577px) {
+	.btn-google,
+	.btn-facebook {
+		width: calc((100% - 1.25rem)/2);
+	}
 }

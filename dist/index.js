@@ -18,15 +18,6 @@ function validateEmail() {
     }
 }
 
-// Toggles password visibility
-// showPasswordCheckbox.addEventListener('change', function () {
-//     if (showPasswordCheckbox.checked) {
-//         passwordInput.type = 'text';
-//     } else {
-//         passwordInput.type = 'password';
-//     }
-// });
-
 function togglePasswordVisibility(passwordInputClass, showPasswordCheckboxClass) {
     const passwordInputs = document.getElementsByClassName('password-input');
     const showPasswordCheckboxes = document.getElementsByClassName('showPassword');
@@ -56,12 +47,6 @@ passwordInput.addEventListener("input", function(){
         showPasswordErrorMessage()
     }
 })
-
-// passwordInput.addEventListener("blur", function(){
-//     if (!passwordInput.validity.valid) {
-//         showPasswordErrorMessage()
-//     }
-// })
 
 function showPasswordErrorMessage() {
     if (passwordInput.value === "") {
