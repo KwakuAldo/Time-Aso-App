@@ -208,3 +208,10 @@ select,
 		width: calc((100% - 1.25rem)/2);
 	}
 }
+
+@media (max-width: 767px) {
+	.right-form {
+		border-top-right-radius: 0;
+    	border-bottom-left-radius: 0.625rem;
+	}
+}
