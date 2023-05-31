@@ -1089,6 +1089,10 @@ select,
 }
 
 @media (min-width: 577px) {
+  .md\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
   .md\:pl-16 {
     padding-left: 4rem;
   }
