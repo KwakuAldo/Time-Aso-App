@@ -15,8 +15,8 @@
         <section class="form relative bg-white w-[69rem] my-24 mx-5">
             <form class="form-input flex flex-col lg:flex-row relative w-full" action="#" method="post">
                 <div class="input-002-container left-form w-full">
-                    <h2 class="text-2xl text-[#2271dd] font-bold mb-8 pt-8 pr-12 pb-0 pl-16">Profile Information</h2>
-                    <div class="form-row relative mb-6 pl-16 pr-12">
+                    <h2 class="text-2xl text-[#2271dd] font-bold mb-8 pt-8 pr-12 pb-0 pl-4 md:pl-16">Profile Information</h2>
+                    <div class="form-row relative mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
 
                         <select class="relative form-txt-02 bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] text-[#666] w-full pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" name="Accessibility" id="">
                             <option class="accessibility" value="" disabled selected hidden>Accessibility</option>
@@ -28,34 +28,34 @@
 
                     </div>
                     <div class="input-002 flex">
-                        <div class="relative w-1/2 mb-6 pr-3 pl-16">
+                        <div class="relative w-1/2 mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                             <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-b-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" id="first_name" type="text" name="first_name" placeholder="First Name" required="" aria-label="first_name">
                         </div>
-                        <div  class="relative w-1/2 mb-6 pr-12 pl-3">
+                        <div  class="relative w-1/2 mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                             <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" id="last_name" type="text" placeholder="Last Name" required="" aria-label="last_name">
                         </div>
                     </div>
-                    <div class="form-row relative mb-6 pl-16 pr-12">
+                    <div class="form-row relative mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                         <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" type="text" placeholder="Username" required aria-label="username">
                     </div>
-                    <div class="form-row relative mb-6 pl-16 pr-12">
+                    <div class="form-row relative mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                         <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" id="email-input" type="email" placeholder="Your Email" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" title="Enter valid email" required aria-label="your email" onblur="validateEmail()">
                         <span class="text-red-500 hidden" id="email-error">Please enter a valid email address</span>
                     </div>
                     
-                    <div class="form-row relative mb-6 pl-16 pr-12">
+                    <div class="form-row relative mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                         <input class="password-input input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]" id="pwdInput" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}" placeholder="Password" required title="Password must be at least four(4) characters long, must contain one(1) capital letter and symbol." aria-label="password">
                     </div>
                     <p class="hidden rounded-lg" id="passwordError"></p>
-                    <div class="form-row relative mb-6 pl-16 pr-12">
+                    <div class="form-row relative mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                         <input class="showPassword" id="showPwd" type="checkbox" aria-label="password-checkbox"/>
                         <label class="txt-sm" for="showPwd">Show Password</label>
                     </div>
                 </div>
 
                 <div class="input-002-container right-form w-full bg-[#4835d4]">
-                    <h2 class="text-2xl text-white font-bold mb-8 pt-8 pr-12 pb-0 pl-16">Contact Details</h2>
-                    <div class="form-row relative mb-6 pl-16 pr-12">
+                    <h2 class="text-2xl text-white font-bold mb-8 pt-8 pr-12 pb-0 pl-4 md:pl-16">Contact Details</h2>
+                    <div class="form-row relative mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                         <select class="relative form-txt-02 bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] text-[#f2f2f2] w-full pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]"
                             name="Accessibility" id="region-select" aria-placeholder="Select Region">
                             <option class="region_select" value="" disabled selected hidden>Select Region</option>
@@ -77,29 +77,29 @@
                         </select>
                     </div>
 
-                    <div class="relative w-auto mb-6 pl-16 pr-12">
+                    <div class="relative w-auto mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                         <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]"
                             id="district" type="text" placeholder="District" required="" aria-label="district">
                     </div>
 
-                    <div class="relative w-auto mb-6 pl-16 pr-12">
+                    <div class="relative w-auto mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                         <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]"
                             id="facility" type="text" placeholder="Facility" required="" aria-label="facility">
                     </div>
 
-                    <div class="relative w-auto mb-6 pl-16 pr-12">
+                    <div class="relative w-auto mb-6 pr-4 pl-4 md:pr-3 md:pl-16">
                         <input class="input-text w-full bg-transparent bg-repeat bg-scroll bg-origin-padding bg-clip-border border-b border-[#ccc] pt-[0.718rem] pr-[0.937rem] pb-[0.937rem] pl-[0.937rem] z-[9]"
                             id="telephone" type="text" pattern="[0-9()+-]+" maxlength="10" placeholder="Phone Number" title="Please enter a valid phone number." required="" aria-label="telephone number">
                     </div>
 
-                    <div class="relative mt-9 pl-16 pr-12">
+                    <div class="relative mt-9 pr-4 pl-4 md:pr-3 md:pl-16">
                         <input type="checkbox" id="T&Cs" aria-label="T&Cs Checkbox"/>
                         <label class="txt-sm" for="T&Cs">I accept the 
                             <a class="txt-sm-02 text-white border-b border-gray-300 ml-1" href="#">Terms and Conditions</a>
                         </label>
                     </div>
 
-                    <div class="flex flex-wrap w-full mt-11 mb-3 pl-14">
+                    <div class="flex flex-wrap w-full mt-11 mb-3 pl-4 md:pl-14">
                         <button class="signUp-btn relative z-[1] flex justify-center items-center px-5 h-16 rounded-lg text-base font-bold">Sign Up</button>
                     </div>
                 </div>
